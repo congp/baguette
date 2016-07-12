@@ -1,0 +1,31 @@
+@mixin spacing-output($spacing-type, $orientation, $value: 0) {
+    @if $orientation == all {
+        #{$spacing-type}: $value;
+    } @else if $orientation == top {
+        #{$spacing-type}-#{$orientation}: $value;
+    } @else if $orientation == right {
+        #{$spacing-type}-#{$orientation}: $value;
+    } @else if $orientation == bottom {
+        #{$spacing-type}-#{$orientation}: $value;
+    } @else if $orientation == left {
+        #{$spacing-type}-#{$orientation}: $value;
+    } @else if $orientation == horizontal {
+        #{$spacing-type}-left: $value;
+        #{$spacing-type}-right: $value;
+    } @else if $orientation == vertical {
+        #{$spacing-type}-bottom: $value;
+        #{$spacing-type}-top: $value;
+    }
+}
+
+@mixin spacing-generator($spacing-type, $orientation) {
+    .#{$spacing-type}-#{$orientation}-0 {
+        @include spacing-output($spacing-type, $orientation);
+    }
+
+    @each $size, $value in $base-sizes {
+        .#{$spacing-type}-#{$orientation}-#{$size} {
+            @include spacing-output($spacing-type, $orientation, $value);
+        }
+    }
+}

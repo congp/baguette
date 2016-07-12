@@ -1,0 +1,14 @@
+// Base ratio
+// This is the main ratio that will play as a constant throughout the system.
+// Everything is align to, with and upon this ratio.
+$base-ratio: 2;
+
+$base-font-size: 1rem;
+
+// Base lists
+$base-sizes:
+    (xs, $base-font-size / ($base-ratio * 2)),
+    (s, $base-font-size / $base-ratio),
+    (m, $base-font-size),
+    (l, $base-font-size * $base-ratio),
+    (xl, $base-font-size * ($base-ratio * 2));
