@@ -1,0 +1,8 @@
+@for $i from 1 through length($font-weights) {
+    $weight: unquote(nth($font-weights, $i));
+    $value: $i * 100;
+
+    .font-weight-#{$weight} {
+        font-weight: $value;
+    }
+}

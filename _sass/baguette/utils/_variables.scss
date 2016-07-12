@@ -12,3 +12,15 @@ $base-sizes:
     (m, $base-font-size),
     (l, $base-font-size * $base-ratio),
     (xl, $base-font-size * ($base-ratio * 2));
+
+$font-weights: (
+    'hairline',
+    'thin',
+    'light',
+    'normal',
+    'medium',
+    'semibold',
+    'bold',
+    'extra-bold',
+    'black'
+);
