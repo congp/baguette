@@ -11,7 +11,8 @@ $base-sizes:
     (s, $base-font-size / $base-ratio),
     (m, $base-font-size),
     (l, $base-font-size * $base-ratio),
-    (xl, $base-font-size * ($base-ratio * 2));
+    (xl, $base-font-size * ($base-ratio * 2)),
+    (xxl, $base-font-size * ($base-ratio * 4));
 
 $font-weights: (
     'hairline',

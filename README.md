@@ -1,2 +1,2 @@
 # baguette
-SCSS utility toolbox
+CSS utility toolbox

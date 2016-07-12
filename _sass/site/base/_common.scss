@@ -2,3 +2,10 @@ html {
     font-family: $font-stack;
     font-size: $base-font-size;
 }
+
+.black-padding-box {
+    background-color: $black;
+    color: $white;
+    display: inline-block;
+    margin-bottom: 10px;
+}
