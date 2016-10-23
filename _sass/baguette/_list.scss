@@ -1,0 +1,8 @@
+@mixin list-reset {
+    list-style: none;
+    padding: 0;
+}
+
+.list-plain {
+    @include list-reset;
+}
